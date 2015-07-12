@@ -14,7 +14,7 @@
     // First application
     {
       name      : "ghost",
-      script    : "npm start",
+      script    : "index.js,
       env: {
         COMMON_VARIABLE: "true"
       },
@@ -34,7 +34,7 @@
   deploy : {
     production : {
       user : "leboff",
-      host : "45.55.142.193",
+      host : "leboff.co",
       ref  : "origin/master",
       repo : "git@github.com:leboff/ghost.git",
       path : "/var/www/production",
