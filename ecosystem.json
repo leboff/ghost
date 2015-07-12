@@ -38,7 +38,7 @@
       ref  : "origin/master",
       repo : "git@github.com:leboff/ghost.git",
       path : "/var/www/ghost",
-      "post-deploy" : "npm install --production; pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "pwd; pm2 startOrRestart ecosystem.json --env production"
     },
     dev : {
       user : "leboff",
