@@ -37,15 +37,15 @@
       host : "leboff.co",
       ref  : "origin/master",
       repo : "git@github.com:leboff/ghost.git",
-      path : "/var/www/production",
-      "post-deploy" : "nvm use 0.12.7; pm2 startOrRestart ecosystem.json --env production"
+      path : "/var/www/ghost",
+      "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
     },
     dev : {
       user : "leboff",
       host : "localhost",
       ref  : "origin/master",
       repo : "git@github.com:leboff/ghost.git",
-      path : "~/projects",
+      path : "~/projects/ghost",
       "post-deploy" : "pm2 startOrRestart ecosystem.json --env dev",
       env  : {
         NODE_ENV: "dev"
