@@ -14,7 +14,7 @@
     // First application
     {
       name      : "ghost",
-      script    : "npm start --production",
+      script    : "index.js",
       env: {
         COMMON_VARIABLE: "true"
       },
