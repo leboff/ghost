@@ -33,7 +33,7 @@
    */
   deploy : {
     production : {
-      key  : "~/.ssh/id_rsa.pub"
+      key  : "~/.ssh/id_rsa.pub",
       user : "leboff",
       host : "leboff.co",
       ref  : "origin/master",
